@@ -1,0 +1,21 @@
+.d-grid{
+    display: grid;
+}
+.d-grid-column-row {
+    display: grid;
+    grid-template-columns: [start-line] 2fr 100px 2fr [finish-line];
+}
+.d-grid-line-name {
+    display: grid;
+    grid-template-columns: [first-line] 1fr [second-line] 200px [third-line] 1fr [fourth-line];
+}
+.row-between-first-second-line div:nth-child(1) {
+    grid-column: 1/4;
+}
+
+.row-between-first-second-line-span div:nth-child(1){
+    grid-column: 1/span 4;
+}
+
+
+
